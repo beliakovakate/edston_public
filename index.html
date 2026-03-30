@@ -367,9 +367,9 @@ details[open].bd summary::before { transform: rotate(90deg); }
         <span class="ig-label">Baseline конверсия</span>
         <span class="badge" id="bdg-p">15.0%</span>
       </div>
-      <input type="range" id="sl-p" min="1" max="80" step="0.5" value="38.3">
+      <input type="range" id="sl-p" min="1" max="80" step="0.5" value="35.8">
       <div class="num-row">
-        <input type="number" id="inp-p" min="0.1" max="99.9" step="0.1" value="38.3">
+        <input type="number" id="inp-p" min="0.1" max="99.9" step="0.1" value="35.8">
         <span class="unit">%</span>
       </div>
       <p class="hint">Средний conversion rate в исторических данных (пре-период)</p>
@@ -934,7 +934,7 @@ document.getElementById('inp-lags').addEventListener('input', render);
 document.getElementById('inp-pre').addEventListener('input', render);
 
 document.getElementById('btn-reset').addEventListener('click', () => {
-  const defs = { 'inp-p': 38.3, 'sl-p': 38.3, 'inp-mde': 8, 'sl-mde': 8,
+  const defs = { 'inp-p': 35.8, 'sl-p': 35.8, 'inp-mde': 8, 'sl-mde': 8,
                  'inp-vol': 22, 'sl-vol': 22, 'inp-rho': 0.10, 'sl-rho': 0.10,
                  'inp-lags': 7, 'inp-pre': 30 };
   for (const [id, v] of Object.entries(defs))
