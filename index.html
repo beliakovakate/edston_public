@@ -698,6 +698,9 @@ function render() {
   // Sensitivity tables
   renderMdeTable(p, vol, alpha, power, rho, K, mde);
   renderVolTable(p, mde, alpha, power, rho, K, vol);
+
+  // Chart
+  drawChart(p, vol, alpha, power, rho, K, mde);
 }
 
 /* ════════════════════════════════════════════════════
@@ -942,6 +945,7 @@ document.getElementById('btn-reset').addEventListener('click', () => {
 });
 
 render();
+window.addEventListener('resize', render);
 </script>
 </body>
 </html>
